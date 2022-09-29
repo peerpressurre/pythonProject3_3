@@ -1,12 +1,17 @@
-d = int(input('enter diameter->'))
+p = int(input('enter price->'))
+q = int(input('enter quantity->'))
+d = int(input('enter discount->'))
 
-print ('| per -> perimetr\n| a-> area')
+print ('| sum -> summary\n| pwd -> price of one console considering discount')
+
 op = input('->')
 res = ''
-if op == 'per':
-    res = int(2*3.14*(d/2))
-elif op == 'a':
-    res = int((3.14*d**2/4))
+sum1 = (int(p*q))
 
-    print(f'res = {res}'
+if op == 'sum':
+    res = int(sum1-((d*sum1)/100))
+elif op == 'pwd':
+    res = int(p-((d*p)/100))
+
+    print(f'res = {res}')
 
