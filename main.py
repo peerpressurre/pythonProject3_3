@@ -1,5 +1,6 @@
 time = int(input('Enter current time->'))
 
+
 if 0 < time <6:
     print('Good nigh')
 elif time == 6:
