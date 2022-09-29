@@ -8,5 +8,5 @@ if op == 'per':
 elif op == 'a':
     res = int((3.14*d**2/4))
 
-    print(f'res = {res}')
+print(f'res = {res}')
 
