@@ -12,5 +12,5 @@ if op == 'sum':
     res = int(sum1-((d*sum1)/100))
 elif op == 'pwd':
     res = int(p-((d*p)/100))
-print(f'res = {res}')
+print(f'res = {res}'
 
