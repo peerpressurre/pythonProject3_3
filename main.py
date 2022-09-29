@@ -1,16 +1,19 @@
-p = int(input('enter price->'))
-q = int(input('enter quantity->'))
-d = int(input('enter discount->'))
+#1 Гігабайт = 8589934592 Біт
+size = int(input('enter file size->'))
+speed = int(input('enter connection speed->'))
 
-print('| sum -> summary\n| pwd -> price of one console considering discount')
-
+print('| h -> hours\n| min -> minutes\n| sec -> seconds')
 op = input('->')
 res = ''
-sum1 = (int(p*q))
+bsize = int(size*8589934592)
 
-if op == 'sum':
-    res = int(sum1-((d*sum1)/100))
-elif op == 'pwd':
-    res = int(p-((d*p)/100))
-print(f'res = {res}'
+if op == 'h':
+    res = int((bsize/speed)/3600)
+elif op == 'min':
+    res = int((bsize/speed)/60)
+elif op == 'sec':
+    res = int(bsize/speed)
+
+print(f'res = {res}')
+
 
